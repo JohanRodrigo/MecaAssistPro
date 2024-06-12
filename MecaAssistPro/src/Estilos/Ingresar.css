@@ -1,0 +1,125 @@
+body{
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el padding predeterminado del body */
+    display: flex; /* Utiliza un layout de flexbox para expandir la imagen */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    height: 100vh; /* Establece la altura del body al 100% del viewport height */
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el body */
+    background-position: center; /* Centra la imagen en el body */
+    background-repeat: no-repeat;
+  }
+  
+.cuadro{
+    width: 500px;
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.cuadro h1{
+    font-size: 30px;
+    text-align: center;
+}
+.cuadro h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.cuadro .t{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.t input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #FF6600;
+    outline: none;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.t input::placeholder{
+    color: #fff;
+}
+
+.t .icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+}
+
+.cuadro .recordar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.recordar label input{
+    accent-color: #FF6600;
+    margin-right: 4px;
+}
+
+.recordar a{
+    color:#FF6600;
+    text-decoration: none;
+}
+
+.recordar a:hover{
+    text-decoration: underline;
+}
+
+.cuadro button{
+    width: 100%;
+    height: 45px;
+    background: #FF6600;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.cuadro .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+.cuadro .im{
+    width: 50%;
+   height: auto;
+   max-width: 200px;
+   display: block;
+   margin: 0 auto;
+}
+
+.cuadro .recordar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 20px 0 15px; 
+}
