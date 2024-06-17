@@ -15,8 +15,20 @@ import historiaRoutes from './routes/historia.routes.js';
 
 const A = express();
 
+const allowedOrigins = [
+    'http://localhost:5173',
+    'https://njwtc2fj-5173.usw3.devtunnels.ms'
+];
+
 A.use(cors({
-    origin: 'http://localhost:5173',
+    origin: function (origin, callback) {
+        // allow requests with no origin, like mobile apps or curl requests
+        if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
     credentials: true
 }));
 A.use(morgan('dev'));
